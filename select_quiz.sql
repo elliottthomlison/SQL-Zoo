@@ -51,11 +51,11 @@ Andorra	936
 
 SELECT name, area, population
 FROM world
-WHERE area > 50000 AND population < 10000000
+WHERE area > 50000 AND population < 10000000;
 
 
 7. Select the code that shows the population density of China, Australia, Nigeria and France
 
 SELECT name, population/area
 FROM world
-WHERE name IN ('China', 'Nigeria', 'France', 'Australia')
+WHERE name IN ('China', 'Nigeria', 'France', 'Australia');

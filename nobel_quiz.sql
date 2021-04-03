@@ -23,7 +23,8 @@ AND yr BETWEEN 1950 and 1960
 
 3. Pick the code that shows the amount of years where no Medicine awards were given
 
-SELECT COUNT(DISTINCT yr) FROM nobel
+SELECT COUNT(DISTINCT yr) 
+FROM nobel
 WHERE yr NOT IN (SELECT DISTINCT yr FROM nobel WHERE subject = 'Medicine')
 
 
@@ -42,7 +43,7 @@ WHERE yr NOT IN(SELECT yr
                 WHERE subject IN ('Chemistry','Physics'))
 
 
-6. Select the code which shows the years when a Medicine award was given but no Peace or Literature award was
+6. Select the code which shows the years when a Medicine award was given but no Peace or Literature award was given
 
 SELECT DISTINCT yr
 FROM nobel
